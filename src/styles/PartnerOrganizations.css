@@ -1,0 +1,148 @@
+.partner-section {
+    background: #f5f5f3;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.partner-container {
+    width: 100%;
+}
+
+.partner-title {
+    max-width: 1400px;
+    margin: 0 auto 90px;
+    padding: 0 40px;
+
+    font-size: clamp(38px, 5vw, 72px);
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+}
+
+.logo-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+
+    animation: partnerScroll 35s linear infinite;
+}
+
+.logo-slider:hover .logo-track {
+    animation-play-state: paused;
+}
+
+.logo-item {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 70px;
+}
+
+.logo-item img {
+    max-width: 180px;
+    width: auto;
+    height: 55px;
+
+    object-fit: contain;
+
+    filter: grayscale(100%);
+    opacity: 0.9;
+
+    transition: all 0.4s ease;
+}
+
+.logo-item:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+
+    transform: translateY(-3px);
+}
+
+@keyframes partnerScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+
+    .partner-section {
+        padding: 90px 0;
+    }
+
+    .partner-title {
+        padding: 0 30px;
+        margin-bottom: 70px;
+    }
+
+    .logo-item {
+        padding: 0 50px;
+    }
+
+    .logo-item img {
+        max-width: 150px;
+        height: 45px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .partner-section {
+        padding: 70px 0;
+    }
+
+    .partner-title {
+        padding: 0 20px;
+        margin-bottom: 50px;
+    }
+
+    .logo-item {
+        padding: 0 35px;
+    }
+
+    .logo-item img {
+        max-width: 120px;
+        height: 38px;
+    }
+
+    .logo-track {
+        animation-duration: 25s;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .partner-title {
+        text-align: center;
+    }
+
+    .logo-item {
+        padding: 0 25px;
+    }
+
+    .logo-item img {
+        max-width: 100px;
+        height: 32px;
+    }
+
+}

@@ -1,0 +1,264 @@
+/* ==========================================
+PRACTICE RESOURCES HERO
+========================================== */
+
+.qa-practice-hero{
+    background:#fff;
+    color:#111;
+    padding:140px 8%;
+    overflow:hidden;
+}
+
+/* TOP */
+
+.qa-practice-top{
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:120px;
+    margin-bottom:120px;
+}
+
+.qa-mini-label{
+    display:block;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#777;
+    margin-bottom:30px;
+}
+
+.qa-practice-left h1{
+    font-size:clamp(36px,4vw,59px);
+    font-weight:300;
+    line-height:1.05;
+    max-width:850px;
+    letter-spacing:-2px;
+}
+
+.qa-practice-right{
+    padding-top:20px;
+}
+
+.qa-practice-right p{
+    font-size:21px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:40px;
+}
+
+.qa-resource-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+}
+
+.qa-resource-links a{
+    text-decoration:none;
+    color:#111;
+    font-size:18px;
+    transition:.3s;
+}
+
+.qa-resource-links a:hover{
+    opacity:.6;
+}
+
+
+/* FEATURE AREA */
+
+.qa-feature-grid{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:90px;
+    align-items:center;
+}
+
+.qa-feature-label{
+    display:block;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#888;
+    margin-bottom:25px;
+}
+
+.qa-feature-content h2{
+    font-size:clamp(32px,3vw,48px);
+    line-height:1.15;
+    font-weight:300;
+    margin-bottom:35px;
+    max-width:650px;
+}
+
+.qa-feature-content p{
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:25px;
+    max-width:580px;
+}
+
+.qa-read-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:18px;
+    margin-top:20px;
+    text-decoration:none;
+    color:#111;
+    font-size:22px;
+    font-weight:500;
+}
+
+.qa-read-btn span{
+    width:54px;
+    height:54px;
+    border:1px solid #111;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+
+
+/* IMAGE */
+
+.qa-feature-image{
+    overflow:hidden;
+}
+
+.qa-feature-image img{
+    width:100%;
+    height:720px;
+    object-fit:cover;
+    display:block;
+}
+
+
+/* ======================
+LAPTOP
+====================== */
+
+@media(max-width:1200px){
+
+    .qa-practice-top{
+        gap:70px;
+    }
+
+    .qa-feature-grid{
+        gap:60px;
+    }
+
+    .qa-feature-image img{
+        height:620px;
+    }
+
+}
+
+
+/* ======================
+TABLET
+====================== */
+
+@media(max-width:992px){
+
+    .qa-practice-hero{
+        padding:100px 6%;
+    }
+
+    .qa-practice-top{
+        grid-template-columns:1fr;
+        gap:50px;
+        margin-bottom:80px;
+    }
+
+    .qa-feature-grid{
+        grid-template-columns:1fr;
+    }
+
+    .qa-feature-image{
+        order:-1;
+    }
+
+    .qa-feature-image img{
+        height:550px;
+    }
+
+}
+
+
+/* ======================
+MOBILE
+====================== */
+
+@media(max-width:768px){
+
+    .qa-practice-hero{
+        padding:80px 6%;
+    }
+
+    .qa-practice-left h1{
+        letter-spacing:-1px;
+    }
+
+    .qa-practice-right p{
+        font-size:17px;
+    }
+
+    .qa-resource-links{
+        gap:12px;
+    }
+
+    .qa-resource-links a{
+        font-size:16px;
+    }
+
+    .qa-feature-content h2{
+        margin-bottom:25px;
+    }
+
+    .qa-feature-content p{
+        font-size:16px;
+    }
+
+    .qa-read-btn{
+        font-size:18px;
+    }
+
+    .qa-read-btn span{
+        width:48px;
+        height:48px;
+    }
+
+    .qa-feature-image img{
+        height:420px;
+    }
+
+}
+
+
+/* ======================
+SMALL MOBILE
+====================== */
+
+@media(max-width:480px){
+
+    .qa-practice-hero{
+        padding:70px 5%;
+    }
+
+    .qa-feature-image img{
+        height:320px;
+    }
+
+    .qa-read-btn{
+        gap:14px;
+    }
+
+    .qa-read-btn span{
+        width:42px;
+        height:42px;
+        font-size:18px;
+    }
+
+}

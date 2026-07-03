@@ -1,0 +1,1288 @@
+/* =========================================
+PAGE BASE
+========================================= */
+
+.multiasset-page{
+width:100%;
+background:#fff;
+color:#000;
+overflow:hidden;
+}
+
+
+
+/* =========================================
+MULTI ASSET HERO
+========================================= */
+
+.multiasset-hero{
+width:100%;
+background:#fff;
+padding:50px 8% 90px;
+overflow:hidden;
+}
+
+
+.multiasset-container{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+
+
+/* =========================
+LEFT
+========================= */
+
+.multiasset-left span{
+font-size:12px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#777;
+display:block;
+margin-bottom:22px;
+}
+
+
+.multiasset-left h1{
+font-size:38px;
+line-height:1.05;
+font-weight:600;
+color:#000;
+position:relative;
+padding-bottom:28px;
+margin-bottom:35px;
+}
+
+
+.multiasset-left h1::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:70px;
+height:3px;
+background:#000;
+}
+
+
+.multiasset-left p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+max-width:620px;
+margin-bottom:45px;
+}
+
+
+
+/* BUTTON */
+
+.multiasset-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+
+.multiasset-btn{
+padding:16px 34px;
+background:#000;
+color:#fff;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+border:1px solid #000;
+transition:.5s ease;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+}
+
+
+.multiasset-btn:hover{
+background:#fff;
+color:#000;
+transform:translateY(-3px);
+}
+
+
+
+/* =========================
+RIGHT IMAGE
+========================= */
+
+.multiasset-right{
+overflow:hidden;
+position:relative;
+border-radius:2px;
+}
+
+
+/* image animation */
+
+.multiasset-right img{
+width:100%;
+height:520px;
+object-fit:cover;
+filter:grayscale(100%);
+transition:
+transform 1s ease,
+filter 1s ease;
+display:block;
+animation:multiHero 1.4s ease;
+}
+
+
+.multiasset-right:hover img{
+transform:scale(1.05);
+filter:grayscale(0%);
+}
+
+
+/* overlay */
+
+.multiasset-right::after{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+to top,
+rgba(0,0,0,.25),
+transparent 45%
+);
+pointer-events:none;
+}
+
+
+
+/* =========================
+ANIMATION
+========================= */
+
+@keyframes multiHero{
+
+from{
+opacity:0;
+transform:translateY(80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* =========================
+LAPTOP
+========================= */
+
+@media(max-width:1200px){
+
+.multiasset-left h1{
+font-size:56px;
+}
+
+.multiasset-right img{
+height:500px;
+}
+
+}
+
+
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.multiasset-container{
+grid-template-columns:1fr;
+gap:55px;
+}
+
+.multiasset-left{
+order:2;
+}
+
+.multiasset-right{
+order:1;
+}
+
+.multiasset-left h1{
+font-size:46px;
+}
+
+.multiasset-right img{
+height:420px;
+}
+
+}
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.multiasset-hero{
+padding:35px 6% 70px;
+}
+
+.multiasset-left h1{
+font-size:38px;
+line-height:1.15;
+}
+
+.multiasset-left p{
+font-size:16px;
+line-height:1.8;
+}
+
+.multiasset-right img{
+height:280px;
+}
+
+.multiasset-btn{
+width:100%;
+text-align:center;
+padding:15px 20px;
+}
+
+}
+
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.multiasset-left h1{
+font-size:32px;
+}
+
+.multiasset-right img{
+height:230px;
+}
+
+}
+
+/* =========================================
+CREDIT PLATFORM STATS
+PREMIUM STYLE
+========================================= */
+
+.credit-platform{
+width:100%;
+background:#fff;
+padding:85px 8%;
+overflow:hidden;
+position:relative;
+}
+
+
+/* subtle background effect */
+
+.credit-platform::before{
+content:"";
+position:absolute;
+right:-120px;
+top:-120px;
+width:350px;
+height:350px;
+background:radial-gradient(
+rgba(0,0,0,.05),
+transparent 70%
+);
+pointer-events:none;
+}
+
+
+
+/* =========================
+TOP CONTENT
+========================= */
+
+.credit-head{
+max-width:760px;
+margin-bottom:55px;
+position:relative;
+z-index:2;
+}
+
+.credit-head span{
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#777;
+display:block;
+margin-bottom:18px;
+}
+
+.credit-head h2{
+font-size:38px;
+line-height:1.15;
+font-weight:600;
+color:#000;
+margin-bottom:22px;
+max-width:720px;
+}
+
+.credit-head p{
+font-size:15px;
+line-height:1.9;
+color:#666;
+max-width:650px;
+}
+
+
+
+/* =========================
+GRID
+========================= */
+
+.credit-stats-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
+}
+
+
+
+/* =========================
+CARD
+========================= */
+
+.credit-card{
+position:relative;
+padding:38px 32px;
+background:#fff;
+border:1px solid #ececec;
+overflow:hidden;
+transition:.6s cubic-bezier(.77,0,.175,1);
+min-height:280px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+
+/* animated hover background */
+
+.credit-card::before{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:0;
+background:#000;
+transition:.7s cubic-bezier(.77,0,.175,1);
+z-index:1;
+}
+
+.credit-card:hover::before{
+height:100%;
+}
+
+
+/* top border animation */
+
+.credit-card::after{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:0;
+height:2px;
+background:#000;
+transition:.6s ease;
+z-index:2;
+}
+
+.credit-card:hover::after{
+width:100%;
+background:#fff;
+}
+
+
+/* inner content */
+
+.credit-card > *{
+position:relative;
+z-index:3;
+}
+
+
+
+/* NUMBER */
+
+.card-count{
+font-size:42px;
+font-weight:600;
+line-height:1;
+margin-bottom:28px;
+color:#000;
+transition:.5s ease;
+letter-spacing:-1px;
+}
+
+
+
+/* TITLE */
+
+.credit-card h3{
+font-size:21px;
+line-height:1.4;
+font-weight:600;
+margin-bottom:16px;
+color:#000;
+transition:.5s ease;
+}
+
+
+
+/* TEXT */
+
+.credit-card p{
+font-size:14px;
+line-height:1.9;
+color:#666;
+transition:.5s ease;
+}
+
+
+
+/* HOVER EFFECT */
+
+.credit-card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 25px 50px rgba(0,0,0,.08);
+}
+
+.credit-card:hover .card-count,
+.credit-card:hover h3,
+.credit-card:hover p{
+color:#fff;
+}
+
+
+
+/* =========================
+BOTTOM NOTE
+========================= */
+
+.credit-note{
+margin-top:35px;
+padding-top:22px;
+border-top:1px solid #ececec;
+}
+
+.credit-note p{
+font-size:12px;
+color:#777;
+line-height:1.8;
+}
+
+
+
+/* =========================================
+LAPTOP
+========================================= */
+
+@media(max-width:1200px){
+
+.credit-stats-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+
+/* =========================================
+TABLET
+========================================= */
+
+@media(max-width:992px){
+
+.credit-platform{
+padding:70px 6%;
+}
+
+.credit-stats-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.credit-head h2{
+font-size:34px;
+}
+
+.credit-card{
+min-height:auto;
+}
+
+}
+
+
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+.credit-platform{
+padding:60px 6%;
+}
+
+.credit-head{
+margin-bottom:40px;
+}
+
+.credit-head h2{
+font-size:30px;
+line-height:1.2;
+}
+
+.credit-head p{
+font-size:15px;
+}
+
+.credit-card{
+padding:30px 24px;
+}
+
+.card-count{
+font-size:34px;
+margin-bottom:22px;
+}
+
+.credit-card h3{
+font-size:19px;
+}
+
+.credit-card p{
+font-size:14px;
+line-height:1.8;
+}
+
+}
+
+
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+.credit-head h2{
+font-size:26px;
+}
+
+.card-count{
+font-size:30px;
+}
+
+.credit-card{
+padding:26px 20px;
+}
+
+}
+
+
+/* =========================================
+MULTI ASSET PERFORMANCE
+PREMIUM VERSION
+========================================= */
+
+.multi-performance{
+width:100%;
+background:#fff;
+padding:50px 8%;
+overflow:hidden;
+position:relative;
+}
+
+
+/* subtle background */
+
+.multi-performance::before{
+content:"";
+position:absolute;
+right:-120px;
+top:-120px;
+width:350px;
+height:350px;
+background:radial-gradient(
+rgba(0,0,0,.05),
+transparent 70%
+);
+pointer-events:none;
+}
+
+
+
+/* =========================
+TOP
+========================= */
+
+.multi-performance-top{
+max-width:760px;
+margin-bottom:55px;
+position:relative;
+z-index:2;
+}
+
+.multi-performance-top span{
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#777;
+display:block;
+margin-bottom:18px;
+}
+
+.multi-performance-top h2{
+font-size:38px;
+line-height:1.15;
+font-weight:600;
+color:#000;
+margin-bottom:22px;
+max-width:720px;
+}
+
+.multi-performance-top p{
+font-size:15px;
+line-height:1.9;
+color:#666;
+max-width:650px;
+}
+
+
+
+/* =========================
+GRID
+========================= */
+
+.multi-performance-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px;
+}
+
+
+
+/* =========================
+CARD
+========================= */
+
+.multi-performance-card{
+position:relative;
+padding:38px 32px;
+background:#fff;
+border:1px solid #ececec;
+overflow:hidden;
+transition:.6s cubic-bezier(.77,0,.175,1);
+min-height:280px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+}
+
+
+/* unique hover bg */
+
+.multi-performance-card::before{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:100%;
+height:0;
+background:#000;
+transition:.7s cubic-bezier(.77,0,.175,1);
+z-index:1;
+}
+
+.multi-performance-card:hover::before{
+height:100%;
+}
+
+
+/* corner line */
+
+.multi-performance-card::after{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:0;
+height:2px;
+background:#000;
+transition:.6s ease;
+z-index:2;
+}
+
+.multi-performance-card:hover::after{
+width:100%;
+background:#fff;
+}
+
+
+/* inner content */
+
+.multi-performance-card > *{
+position:relative;
+z-index:3;
+}
+
+
+
+/* NUMBER */
+
+.multi-number{
+font-size:44px;
+font-weight:600;
+line-height:1;
+margin-bottom:28px;
+color:#000;
+transition:.5s ease;
+letter-spacing:-1px;
+}
+
+
+
+/* TITLE */
+
+.multi-performance-card h3{
+font-size:21px;
+line-height:1.4;
+font-weight:600;
+margin-bottom:16px;
+color:#000;
+transition:.5s ease;
+}
+
+
+
+/* TEXT */
+
+.multi-performance-card p{
+font-size:14px;
+line-height:1.9;
+color:#666;
+transition:.5s ease;
+}
+
+
+
+/* hover */
+
+.multi-performance-card:hover{
+transform:translateY(-10px);
+box-shadow:
+0 25px 50px rgba(0,0,0,.08);
+}
+
+.multi-performance-card:hover .multi-number,
+.multi-performance-card:hover h3,
+.multi-performance-card:hover p{
+color:#fff;
+}
+
+
+
+/* =========================
+BOTTOM NOTE
+========================= */
+
+.multi-performance-note{
+margin-top:35px;
+padding-top:22px;
+border-top:1px solid #ececec;
+}
+
+.multi-performance-note p{
+font-size:12px;
+color:#777;
+line-height:1.8;
+}
+
+
+
+/* =========================================
+TABLET
+========================================= */
+
+@media(max-width:992px){
+
+.multi-performance{
+padding:70px 6%;
+}
+
+.multi-performance-grid{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.multi-performance-top h2{
+font-size:34px;
+}
+
+.multi-performance-card{
+min-height:auto;
+}
+
+}
+
+
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+.multi-performance{
+padding:60px 6%;
+}
+
+.multi-performance-top{
+margin-bottom:40px;
+}
+
+.multi-performance-top h2{
+font-size:30px;
+line-height:1.2;
+}
+
+.multi-performance-top p{
+font-size:15px;
+}
+
+.multi-performance-card{
+padding:30px 24px;
+}
+
+.multi-number{
+font-size:34px;
+margin-bottom:22px;
+}
+
+.multi-performance-card h3{
+font-size:19px;
+}
+
+.multi-performance-card p{
+font-size:14px;
+line-height:1.8;
+}
+
+}
+
+
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+.multi-performance-top h2{
+font-size:26px;
+}
+
+.multi-number{
+font-size:30px;
+}
+
+.multi-performance-card{
+padding:26px 20px;
+}
+
+}
+
+/* ==========================
+WHAT WE DO
+========================== */
+
+.re-work{
+padding:40px 10% 120px;
+background:#fff;
+color:#000;
+}
+
+
+.re-work-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+margin-top:70px;
+}
+
+
+/* IMAGE */
+
+.re-image{
+overflow:hidden;
+position:relative;
+height:650px;
+}
+
+.re-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+
+filter:grayscale(100%);
+
+transform:scale(1.08) translateY(50px);
+
+transition:1.3s ease;
+}
+
+
+/* PROFESSIONAL ANIMATION */
+
+.re-image:hover img{
+
+transform:scale(1.15) translateY(0);
+
+filter:grayscale(0%);
+
+}
+
+
+/* moving line */
+
+.re-image::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+border:1px solid rgba(255,255,255,.4);
+
+transform:translate(25px,25px);
+
+transition:.8s;
+
+z-index:2;
+}
+
+.re-image:hover::before{
+
+transform:translate(0,0);
+
+}
+
+
+
+/* RIGHT SIDE */
+
+.re-content{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+
+.re-card{
+padding-bottom:30px;
+border-bottom:1px solid #ddd;
+transition:.4s;
+}
+
+.re-card:hover{
+
+padding-left:15px;
+
+}
+
+
+.re-card h3{
+
+font-size:28px;
+margin-bottom:15px;
+font-weight:600;
+position:relative;
+}
+
+
+.re-card h3::before{
+
+content:"";
+
+width:40px;
+height:2px;
+background:#000;
+
+position:absolute;
+
+left:-55px;
+top:18px;
+
+}
+
+
+.re-card p{
+
+font-size:17px;
+line-height:1.9;
+color:#555;
+}
+
+
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.re-work-container{
+
+grid-template-columns:1fr;
+
+}
+
+.re-image{
+
+height:500px;
+
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.re-work{
+
+padding:90px 6%;
+
+}
+
+.re-image{
+
+height:280px;
+
+}
+
+.re-card h3{
+
+font-size:22px;
+
+}
+
+.re-card h3::before{
+
+display:none;
+
+}
+
+.re-card p{
+
+font-size:16px;
+
+}
+
+}
+
+
+/* ==========================
+OUR PORTFOLIO SHOWCASE
+========================== */
+
+.portfolio-showcase{
+    background:#f5f5f3;
+    padding:120px 10%;
+}
+
+.portfolio-showcase-container{
+    max-width:1400px;
+    margin:auto;
+}
+
+
+/* HEADER */
+
+.portfolio-header{
+    max-width:950px;
+    margin-bottom:90px;
+}
+
+.portfolio-label{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.portfolio-label span{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#000;
+}
+
+.portfolio-label::after{
+    content:"";
+    width:50px;
+    height:1px;
+    background:#000;
+}
+
+.portfolio-header h2{
+    font-size:clamp(42px,4vw,64px);
+    font-weight:400;
+    line-height:1.2;
+    color:#000;
+    margin-bottom:30px;
+}
+
+.portfolio-header p{
+    max-width:750px;
+    font-size:18px;
+    line-height:1.9;
+    color:#555;
+}
+
+
+/* GRID */
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:70px 60px;
+}
+
+
+/* CARD */
+
+.portfolio-card{
+    display:flex;
+    flex-direction:column;
+}
+
+.portfolio-card h3{
+    font-size:34px;
+    font-weight:400;
+    color:#000;
+    margin-bottom:25px;
+}
+
+.portfolio-card p{
+    font-size:16px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:35px;
+}
+
+
+/* CTA */
+
+.portfolio-card a{
+    display:inline-flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+    color:#000;
+
+    font-size:14px;
+    font-weight:500;
+
+    margin-top:auto;
+}
+
+.portfolio-card a span{
+    width:38px;
+    height:38px;
+
+    border:1px solid #000;
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:.3s ease;
+}
+
+.portfolio-card:hover a span{
+    transform:translateX(4px);
+}
+
+
+/* ===============================
+   TEAM NOTE
+=================================*/
+
+.team-note {
+  background: #000;
+  color: #fff;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.team-note h2 {
+  font-size: 28px;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 992px) {
+
+  .directors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}

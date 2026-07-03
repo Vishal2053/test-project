@@ -1,0 +1,847 @@
+.pe-page{
+background:#fff;
+color:#000;
+}
+
+/* ==========================
+REAL ESTATE HERO
+========================== */
+
+.pe-hero{
+padding:80px 10%;
+background:#fff;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:80px;
+align-items:center;
+min-height:75vh;
+}
+
+
+/* LEFT */
+
+.hero-left span{
+font-size:12px;
+letter-spacing:3px;
+color:#777;
+display:block;
+margin-bottom:20px;
+}
+
+.hero-left h1{
+font-size:34px;
+font-weight:600;
+line-height:1;
+margin-bottom:30px;
+color:#000;
+position:relative;
+}
+
+.hero-left h1::after{
+content:"";
+width:60px;
+height:3px;
+background:#000;
+position:absolute;
+left:0;
+bottom:-15px;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.8;
+max-width:550px;
+margin-top:40px;
+color:#444;
+}
+
+
+/* RIGHT IMAGE */
+
+.hero-right{
+width:100%;
+overflow:hidden;
+}
+
+.hero-right img{
+width:100%;
+height:500px;
+object-fit:cover;
+}
+
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.pe-hero{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.hero-left h1{
+font-size:55px;
+}
+
+.hero-right img{
+height:450px;
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.pe-hero{
+padding:100px 6%;
+}
+
+.hero-left h1{
+font-size:42px;
+}
+
+.hero-left p{
+font-size:16px;
+}
+
+.hero-right img{
+height:280px;
+}
+
+}
+
+
+/* ====================================
+WHY ALLOCATION MATTERS
+==================================== */
+
+.allocation-matters{
+padding:120px 8%;
+background:#000;
+color:#fff;
+}
+
+.allocation-header{
+max-width:900px;
+margin:0 auto 80px;
+text-align:center;
+}
+
+.allocation-header span{
+font-size:12px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#999;
+display:block;
+margin-bottom:20px;
+}
+
+.allocation-header h2{
+font-size:clamp(40px,5vw,70px);
+line-height:1;
+font-weight:500;
+margin-bottom:30px;
+}
+
+.allocation-header p{
+max-width:750px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+color:#bdbdbd;
+}
+
+.allocation-grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:1400px;
+margin:auto;
+}
+
+.allocation-box{
+position:relative;
+padding:50px;
+min-height:320px;
+border:1px solid rgba(255,255,255,.08);
+background:rgba(255,255,255,.02);
+backdrop-filter:blur(10px);
+transition:.5s ease;
+overflow:hidden;
+}
+
+.allocation-box::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:1px;
+background:linear-gradient(
+90deg,
+transparent,
+#fff,
+transparent
+);
+opacity:.15;
+}
+
+.allocation-box:hover{
+transform:translateY(-10px);
+border-color:rgba(255,255,255,.2);
+}
+
+.allocation-number{
+font-size:90px;
+font-weight:200;
+line-height:1;
+color:rgba(255,255,255,.08);
+margin-bottom:30px;
+}
+
+.allocation-box h3{
+font-size:32px;
+font-weight:500;
+margin-bottom:20px;
+}
+
+.allocation-box p{
+font-size:17px;
+line-height:1.9;
+color:#bdbdbd;
+max-width:450px;
+}
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.allocation-grid{
+grid-template-columns:1fr;
+}
+
+.allocation-box{
+min-height:auto;
+padding:40px;
+}
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.allocation-matters{
+padding:90px 25px;
+}
+
+.allocation-header h2{
+font-size:42px;
+}
+
+.allocation-header p{
+font-size:16px;
+}
+
+.allocation-box{
+padding:35px 25px;
+}
+
+.allocation-number{
+font-size:60px;
+}
+
+.allocation-box h3{
+font-size:24px;
+}
+
+.allocation-box p{
+font-size:15px;
+line-height:1.8;
+}
+
+}
+
+/* =====================================
+ALLOCATION FRAMEWORK
+===================================== */
+
+.allocation-framework{
+padding:140px 8%;
+background:#000;
+color:#fff;
+overflow:hidden;
+}
+
+.framework-head{
+max-width:900px;
+margin:0 auto 90px;
+text-align:center;
+}
+
+.framework-head span{
+display:block;
+font-size:12px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#9c9c9c;
+margin-bottom:20px;
+}
+
+.framework-head h2{
+font-size:clamp(40px,5vw,80px);
+font-weight:500;
+line-height:1.05;
+margin-bottom:25px;
+}
+
+.framework-head p{
+max-width:750px;
+margin:auto;
+font-size:18px;
+line-height:1.9;
+color:#bdbdbd;
+}
+
+/* TABLE */
+
+.framework-table{
+max-width:1400px;
+margin:auto;
+border-top:1px solid rgba(255,255,255,.12);
+}
+
+.framework-row{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+padding:35px 10px;
+border-bottom:1px solid rgba(255,255,255,.08);
+transition:.45s ease;
+position:relative;
+}
+
+.framework-row::before{
+content:"";
+position:absolute;
+left:0;
+bottom:-1px;
+width:0;
+height:1px;
+background:#fff;
+transition:.5s;
+}
+
+.framework-row:hover::before{
+width:100%;
+}
+
+.framework-row:hover{
+padding-left:25px;
+padding-right:25px;
+background:rgba(255,255,255,.02);
+}
+
+/* HEADER */
+
+.framework-title{
+padding-bottom:28px;
+background:none !important;
+}
+
+.framework-title div{
+font-size:13px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#888;
+font-weight:600;
+}
+
+/* LEFT COLUMN */
+
+.objective{
+font-size:30px;
+font-weight:400;
+line-height:1.2;
+}
+
+/* RIGHT COLUMN */
+
+.focus{
+font-size:22px;
+color:#d5d5d5;
+text-align:right;
+position:relative;
+padding-right:40px;
+}
+
+/* ARROW */
+
+.focus::after{
+content:"↗";
+position:absolute;
+right:0;
+top:50%;
+transform:translateY(-50%);
+font-size:20px;
+transition:.35s;
+}
+
+.framework-row:hover .focus::after{
+transform:translateY(-50%) translateX(8px);
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.framework-row{
+grid-template-columns:1fr;
+gap:15px;
+}
+
+.focus{
+text-align:left;
+padding-right:0;
+padding-left:0;
+}
+
+.focus::after{
+display:none;
+}
+
+.objective{
+font-size:24px;
+}
+
+.focus{
+font-size:18px;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.allocation-framework{
+padding:90px 25px;
+}
+
+.framework-head h2{
+font-size:42px;
+}
+
+.framework-head p{
+font-size:16px;
+}
+
+.framework-row{
+padding:25px 0;
+}
+
+.objective{
+font-size:22px;
+}
+
+.focus{
+font-size:16px;
+}
+
+.framework-title{
+display:none;
+}
+
+}
+
+
+/* =====================================
+PORTFOLIO ALLOCATION
+===================================== */
+
+.portfolio-allocation{
+padding:140px 8%;
+background:#fff;
+}
+
+.portfolio-head{
+max-width:850px;
+margin:0 auto 80px;
+text-align:center;
+}
+
+.portfolio-head span{
+display:block;
+font-size:12px;
+letter-spacing:4px;
+text-transform:uppercase;
+color:#777;
+margin-bottom:18px;
+}
+
+.portfolio-head h2{
+font-size:clamp(42px,5vw,80px);
+font-weight:500;
+line-height:1.05;
+color:#000;
+margin-bottom:25px;
+}
+
+.portfolio-head p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+max-width:700px;
+margin:auto;
+}
+
+/* BOARD */
+
+.allocation-board{
+max-width:1200px;
+margin:auto;
+background:#f7f7f7;
+padding:70px;
+border-radius:24px;
+border:1px solid #e8e8e8;
+}
+
+/* ITEM */
+
+.allocation-item{
+margin-bottom:45px;
+}
+
+.allocation-item:last-child{
+margin-bottom:0;
+}
+
+.allocation-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:15px;
+}
+
+.allocation-top h3{
+font-size:24px;
+font-weight:500;
+color:#000;
+}
+
+.allocation-top span{
+font-size:46px;
+font-weight:300;
+color:#000;
+}
+
+/* BAR */
+
+.allocation-bar{
+width:100%;
+height:12px;
+background:#e4e4e4;
+border-radius:100px;
+overflow:hidden;
+}
+
+.allocation-fill{
+height:100%;
+background:#000;
+border-radius:100px;
+transition:1s ease;
+}
+
+/* HOVER */
+
+.allocation-item:hover .allocation-fill{
+filter:brightness(.7);
+}
+
+.allocation-item:hover .allocation-top span{
+transform:translateX(8px);
+transition:.4s;
+}
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.allocation-board{
+padding:50px 35px;
+}
+
+.allocation-top h3{
+font-size:22px;
+}
+
+.allocation-top span{
+font-size:36px;
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.portfolio-allocation{
+padding:90px 25px;
+}
+
+.portfolio-head h2{
+font-size:42px;
+}
+
+.portfolio-head p{
+font-size:16px;
+}
+
+.allocation-board{
+padding:30px 20px;
+border-radius:18px;
+}
+
+.allocation-top{
+flex-direction:column;
+align-items:flex-start;
+gap:8px;
+}
+
+.allocation-top h3{
+font-size:18px;
+}
+
+.allocation-top span{
+font-size:28px;
+}
+
+.allocation-bar{
+height:10px;
+}
+
+}
+/* =========================================
+WHY PRIVATE MARKETS
+========================================= */
+
+.private-markets{
+width:100%;
+background:#000;
+padding:120px 8%;
+overflow:hidden;
+}
+
+
+/* TOP */
+
+.private-top{
+max-width:850px;
+margin-bottom:70px;
+}
+
+.private-top span{
+display:block;
+font-size:11px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#8f8f8f;
+margin-bottom:18px;
+}
+
+.private-top h2{
+font-size:38px;
+line-height:1.15;
+font-weight:600;
+color:#fff;
+margin-bottom:22px;
+}
+
+.private-top p{
+font-size:16px;
+line-height:1.9;
+color:#bdbdbd;
+max-width:700px;
+}
+
+
+
+/* LIST */
+
+.private-list{
+border-top:1px solid rgba(255,255,255,.12);
+}
+
+
+
+/* ROW */
+
+.private-row{
+display:grid;
+grid-template-columns:140px 1fr;
+gap:60px;
+padding:40px 0;
+border-bottom:1px solid rgba(255,255,255,.12);
+transition:.5s ease;
+position:relative;
+}
+
+
+/* hover line */
+
+.private-row::before{
+content:"";
+position:absolute;
+left:0;
+bottom:-1px;
+width:0;
+height:1px;
+background:#fff;
+transition:.7s ease;
+}
+
+.private-row:hover::before{
+width:100%;
+}
+
+.private-row:hover{
+padding-left:20px;
+}
+
+
+
+/* NUMBER */
+
+.private-number{
+font-size:70px;
+font-weight:600;
+line-height:1;
+color:rgba(255,255,255,.15);
+transition:.5s ease;
+}
+
+.private-row:hover .private-number{
+color:#fff;
+}
+
+
+
+/* CONTENT */
+
+.private-content h3{
+font-size:30px;
+font-weight:600;
+color:#fff;
+margin-bottom:15px;
+}
+
+.private-content p{
+font-size:15px;
+line-height:1.9;
+color:#bdbdbd;
+max-width:700px;
+}
+
+
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.private-markets{
+padding:90px 6%;
+}
+
+.private-row{
+grid-template-columns:90px 1fr;
+gap:35px;
+}
+
+.private-top h2{
+font-size:34px;
+}
+
+.private-number{
+font-size:55px;
+}
+
+.private-content h3{
+font-size:26px;
+}
+
+}
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.private-markets{
+padding:70px 6%;
+}
+
+.private-top{
+margin-bottom:50px;
+}
+
+.private-top h2{
+font-size:30px;
+}
+
+.private-row{
+grid-template-columns:1fr;
+gap:20px;
+padding:28px 0;
+}
+
+.private-row:hover{
+padding-left:0;
+}
+
+.private-number{
+font-size:40px;
+}
+
+.private-content h3{
+font-size:22px;
+}
+
+.private-content p{
+font-size:14px;
+line-height:1.8;
+}
+
+}
+
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.private-top h2{
+font-size:26px;
+}
+
+.private-content h3{
+font-size:20px;
+}
+
+.private-number{ 
+font-size:34px;
+}
+
+}

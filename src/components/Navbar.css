@@ -1,0 +1,172 @@
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* NAVBAR */
+
+.navbar{
+width:100%;
+background:#000;
+position:relative;
+z-index:1000;
+}
+
+/* CONTAINER */
+
+.nav-container{
+max-width:1400px;
+margin:auto;
+height:120px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:15px 30px 0 30px; /* top padding added */
+}
+
+/* LOGO */
+
+.logo img{
+  height:80px;
+  padding:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+
+  border:1px solid #fff; /* white border added */
+}
+
+/* MENU */
+
+.nav-menu{
+list-style:none;
+display:flex;
+gap:30px;
+align-items:center;
+}
+
+.nav-menu a,
+.nav-menu span{
+color:#fff;
+font-size:18px;
+text-decoration:none;
+cursor:pointer;
+transition:.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu span:hover{
+opacity:.8;
+}
+
+/* ===== MEGA MENU ===== */
+
+.mega-menu{
+position:absolute;
+top:110px;
+left:0;
+width:100%;
+background:#000;
+border-top:2px solid #ffffff;
+padding:60px 0;
+z-index:999;
+}
+
+/* INNER */
+
+.mega-inner{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:70px;
+padding:0 60px;
+align-items:flex-start;
+}
+
+/* COLUMN */
+
+.mega-column{
+display:flex;
+flex-direction:column;
+gap:14px;
+align-items:flex-start;
+}
+
+/* HEADING FIX */
+
+.mega-column h4{
+color:#fff;
+font-size:18px;
+margin-bottom:18px;
+font-weight:600;
+white-space:nowrap;   /* keeps heading in one line */
+line-height:1;
+min-height:25px;      /* same alignment */
+}
+
+/* LINKS */
+
+.mega-column a{
+color:#e9e9e9;
+text-decoration:none;
+font-size:18px;
+line-height:1.8;
+transition:.3s;
+}
+
+.mega-column a:hover{
+color:#fff;
+padding-left:5px;
+}
+
+/* MOBILE */
+
+.menu-toggle{
+display:none;
+font-size:26px;
+color:#fff;
+cursor:pointer;
+}
+
+@media(max-width:992px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-menu{
+position:absolute;
+top:110px;
+left:0;
+width:100%;
+background:#000;
+flex-direction:column;
+gap:20px;
+padding:30px 0;
+display:none;
+}
+
+.nav-menu.active{
+display:flex;
+}
+
+.mega-menu{
+position:static;
+padding:40px 0;
+}
+
+.mega-inner{
+grid-template-columns:1fr;
+gap:40px;
+padding:0 30px;
+}
+
+.mega-column h4{
+white-space:normal;
+}
+
+}
+

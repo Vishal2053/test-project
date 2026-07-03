@@ -1,0 +1,639 @@
+.pe-page{
+background:#fff;
+color:#000;
+}
+
+/* ==========================
+REAL ESTATE HERO
+========================== */
+
+.pe-hero{
+padding:80px 10%;
+background:#fff;
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:80px;
+align-items:center;
+min-height:75vh;
+}
+
+
+/* LEFT */
+
+.hero-left span{
+font-size:12px;
+letter-spacing:3px;
+color:#777;
+display:block;
+margin-bottom:20px;
+}
+
+.hero-left h1{
+font-size:34px;
+font-weight:600;
+line-height:1;
+margin-bottom:30px;
+color:#000;
+position:relative;
+}
+
+.hero-left h1::after{
+content:"";
+width:60px;
+height:3px;
+background:#000;
+position:absolute;
+left:0;
+bottom:-15px;
+}
+
+.hero-left p{
+font-size:18px;
+line-height:1.8;
+max-width:550px;
+margin-top:40px;
+color:#444;
+}
+
+
+/* RIGHT IMAGE */
+
+.hero-right{
+width:100%;
+overflow:hidden;
+}
+
+.hero-right img{
+width:100%;
+height:500px;
+object-fit:cover;
+transition:.6s;
+filter:grayscale(100%);
+}
+
+.hero-right:hover img{
+transform:scale(1.05);
+filter:grayscale(0%);
+}
+
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.pe-hero{
+grid-template-columns:1fr;
+gap:50px;
+}
+
+.hero-left h1{
+font-size:55px;
+}
+
+.hero-right img{
+height:450px;
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.pe-hero{
+padding:100px 6%;
+}
+
+.hero-left h1{
+font-size:42px;
+}
+
+.hero-left p{
+font-size:16px;
+}
+
+.hero-right img{
+height:280px;
+}
+
+}
+
+/* =========================================
+PLATFORM PERFORMANCE
+PREMIUM VERSION
+========================================= */
+
+.platform-performance{
+    width:100%;
+    background:#fff;
+    padding:85px 8%;
+    overflow:hidden;
+    position:relative;
+}
+
+/* Subtle Background Accent */
+
+.platform-performance::before{
+    content:"";
+    position:absolute;
+    right:-120px;
+    top:-120px;
+    width:350px;
+    height:350px;
+    background:radial-gradient(
+        rgba(0,0,0,.05),
+        transparent 70%
+    );
+    pointer-events:none;
+}
+
+
+/* =========================
+TOP SECTION
+========================= */
+
+.platform-top{
+    max-width:760px;
+    margin-bottom:55px;
+    position:relative;
+    z-index:2;
+}
+
+.platform-top span{
+    display:block;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#777;
+    margin-bottom:18px;
+}
+
+.platform-top h2{
+    font-size:38px;
+    line-height:1.15;
+    font-weight:600;
+    color:#000;
+    margin-bottom:22px;
+    max-width:720px;
+}
+
+.platform-top p{
+    font-size:15px;
+    line-height:1.9;
+    color:#666;
+    max-width:650px;
+}
+
+
+/* =========================
+GRID
+========================= */
+
+.platform-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+
+/* =========================
+CARD
+========================= */
+
+.platform-card{
+    position:relative;
+    padding:38px 32px;
+    background:#fff;
+    border:1px solid #ececec;
+    overflow:hidden;
+
+    min-height:280px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:.6s cubic-bezier(.77,0,.175,1);
+}
+
+
+/* Hover Background */
+
+.platform-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:0;
+
+    background:#000;
+
+    transition:.7s cubic-bezier(.77,0,.175,1);
+
+    z-index:1;
+}
+
+.platform-card:hover::before{
+    height:100%;
+}
+
+
+/* Top Line */
+
+.platform-card::after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+
+    width:0;
+    height:2px;
+
+    background:#000;
+
+    transition:.6s ease;
+
+    z-index:2;
+}
+
+.platform-card:hover::after{
+    width:100%;
+    background:#fff;
+}
+
+
+/* Inner Content */
+
+.platform-card > *{
+    position:relative;
+    z-index:3;
+}
+
+
+/* =========================
+NUMBER
+========================= */
+
+.platform-number{
+    font-size:44px;
+    font-weight:600;
+    line-height:1;
+    letter-spacing:-1px;
+
+    color:#000;
+
+    margin-bottom:28px;
+
+    transition:.5s ease;
+}
+
+
+/* =========================
+TITLE
+========================= */
+
+.platform-card h3{
+    font-size:21px;
+    line-height:1.4;
+    font-weight:600;
+
+    color:#000;
+
+    margin-bottom:16px;
+
+    transition:.5s ease;
+}
+
+
+/* =========================
+TEXT
+========================= */
+
+.platform-card p{
+    font-size:14px;
+    line-height:1.9;
+    color:#666;
+
+    transition:.5s ease;
+}
+
+
+/* =========================
+HOVER EFFECT
+========================= */
+
+.platform-card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,.08);
+}
+
+.platform-card:hover .platform-number,
+.platform-card:hover h3,
+.platform-card:hover p{
+    color:#fff;
+}
+
+
+/* =========================
+BOTTOM NOTE
+========================= */
+
+.platform-note{
+    margin-top:35px;
+    padding-top:22px;
+    border-top:1px solid #ececec;
+}
+
+.platform-note p{
+    font-size:12px;
+    color:#777;
+    line-height:1.8;
+}
+
+
+/* =========================================
+TABLET
+========================================= */
+
+@media(max-width:992px){
+
+    .platform-performance{
+        padding:70px 6%;
+    }
+
+    .platform-grid{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .platform-top h2{
+        font-size:34px;
+    }
+
+    .platform-card{
+        min-height:auto;
+    }
+}
+
+
+/* =========================================
+MOBILE
+========================================= */
+
+@media(max-width:768px){
+
+    .platform-performance{
+        padding:60px 6%;
+    }
+
+    .platform-top{
+        margin-bottom:40px;
+    }
+
+    .platform-top h2{
+        font-size:30px;
+        line-height:1.2;
+    }
+
+    .platform-top p{
+        font-size:15px;
+    }
+
+    .platform-card{
+        padding:30px 24px;
+    }
+
+    .platform-number{
+        font-size:34px;
+        margin-bottom:22px;
+    }
+
+    .platform-card h3{
+        font-size:19px;
+    }
+
+    .platform-card p{
+        font-size:14px;
+        line-height:1.8;
+    }
+}
+
+
+/* =========================================
+SMALL MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+    .platform-top h2{
+        font-size:26px;
+    }
+
+    .platform-number{
+        font-size:30px;
+    }
+
+    .platform-card{
+        padding:26px 20px;
+    }
+}
+
+
+/* ==========================
+WHAT WE DO
+========================== */
+
+.re-work{
+padding:40px 10% 120px;
+background:#fff;
+color:#000;
+}
+
+
+.re-work-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+margin-top:70px;
+}
+
+
+/* IMAGE */
+
+.re-image{
+overflow:hidden;
+position:relative;
+height:650px;
+}
+
+.re-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+
+filter:grayscale(100%);
+
+transform:scale(1.08) translateY(50px);
+
+transition:1.3s ease;
+}
+
+
+/* PROFESSIONAL ANIMATION */
+
+.re-image:hover img{
+
+transform:scale(1.15) translateY(0);
+
+filter:grayscale(0%);
+
+}
+
+
+/* moving line */
+
+.re-image::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+border:1px solid rgba(255,255,255,.4);
+
+transform:translate(25px,25px);
+
+transition:.8s;
+
+z-index:2;
+}
+
+.re-image:hover::before{
+
+transform:translate(0,0);
+
+}
+
+
+
+/* RIGHT SIDE */
+
+.re-content{
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+
+.re-card{
+padding-bottom:30px;
+border-bottom:1px solid #ddd;
+transition:.4s;
+}
+
+.re-card:hover{
+
+padding-left:15px;
+
+}
+
+
+.re-card h3{
+
+font-size:28px;
+margin-bottom:15px;
+font-weight:600;
+position:relative;
+}
+
+
+.re-card h3::before{
+
+content:"";
+
+width:40px;
+height:2px;
+background:#000;
+
+position:absolute;
+
+left:-55px;
+top:18px;
+
+}
+
+
+.re-card p{
+
+font-size:17px;
+line-height:1.9;
+color:#555;
+}
+
+
+
+/* TABLET */
+
+@media(max-width:992px){
+
+.re-work-container{
+
+grid-template-columns:1fr;
+
+}
+
+.re-image{
+
+height:500px;
+
+}
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.re-work{
+
+padding:90px 6%;
+
+}
+
+.re-image{
+
+height:280px;
+
+}
+
+.re-card h3{
+
+font-size:22px;
+
+}
+
+.re-card h3::before{
+
+display:none;
+
+}
+
+.re-card p{
+
+font-size:16px;
+
+}
+
+}

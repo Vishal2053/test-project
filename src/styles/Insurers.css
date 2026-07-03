@@ -1,0 +1,1123 @@
+.insurers-page{
+background:#fff;
+color:#000;
+min-height:100vh;
+}
+
+/* =========================
+INSURERS HERO
+========================= */
+
+.insurers-hero{
+width:100%;
+background:#fff;
+padding:50px 8% 90px;
+overflow:hidden;
+}
+
+
+.insurers-container{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+
+
+/* =========================
+LEFT
+========================= */
+
+.insurers-left span{
+font-size:12px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#777;
+display:block;
+margin-bottom:22px;
+}
+
+
+.insurers-left h1{
+font-size:38px;
+line-height:1.05;
+font-weight:600;
+color:#000;
+position:relative;
+padding-bottom:28px;
+margin-bottom:35px;
+}
+
+
+.insurers-left h1::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:70px;
+height:3px;
+background:#000;
+}
+
+
+.insurers-left p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+max-width:620px;
+margin-bottom:45px;
+}
+
+
+
+/* BUTTON */
+
+.insurers-buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+
+.insurers-btn{
+padding:16px 34px;
+background:#000;
+color:#fff;
+text-decoration:none;
+font-size:14px;
+letter-spacing:1px;
+border:1px solid #000;
+transition:.5s ease;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+}
+
+
+.insurers-btn:hover{
+background:#fff;
+color:#000;
+transform:translateY(-3px);
+}
+
+
+
+/* =========================
+RIGHT IMAGE
+========================= */
+
+.insurers-right{
+overflow:hidden;
+position:relative;
+border-radius:2px;
+}
+
+
+/* IMAGE */
+
+.insurers-right img{
+width:100%;
+height:520px;
+object-fit:cover;
+filter:grayscale(100%);
+transition:
+transform 1s ease,
+filter 1s ease;
+display:block;
+animation:insurersHeroImage 1.4s ease;
+}
+
+
+.insurers-right:hover img{
+transform:scale(1.05);
+filter:grayscale(0%);
+}
+
+
+/* OVERLAY */
+
+.insurers-right::after{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:linear-gradient(
+to top,
+rgba(0,0,0,.25),
+transparent 45%
+);
+pointer-events:none;
+}
+
+
+
+/* =========================
+ANIMATION
+========================= */
+
+@keyframes insurersHeroImage{
+
+from{
+opacity:0;
+transform:translateY(80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+
+
+/* =========================
+LAPTOP
+========================= */
+
+@media(max-width:1200px){
+
+.insurers-left h1{
+font-size:54px;
+}
+
+.insurers-right img{
+height:470px;
+}
+
+}
+
+
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.insurers-container{
+grid-template-columns:1fr;
+gap:55px;
+}
+
+.insurers-left{
+order:2;
+}
+
+.insurers-right{
+order:1;
+}
+
+.insurers-left h1{
+font-size:46px;
+}
+
+.insurers-right img{
+height:420px;
+}
+
+}
+
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.insurers-hero{
+padding:35px 6% 70px;
+}
+
+.insurers-left h1{
+font-size:38px;
+line-height:1.15;
+}
+
+.insurers-left p{
+font-size:16px;
+line-height:1.8;
+}
+
+.insurers-right img{
+height:280px;
+}
+
+.insurers-btn{
+width:100%;
+text-align:center;
+padding:15px 20px;
+}
+
+}
+
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.insurers-left h1{
+font-size:32px;
+}
+
+.insurers-right img{
+height:230px;
+}
+
+}
+
+
+
+/* =========================
+INSURERS PERFORMANCE
+========================= */
+
+.insurers-performance{
+width:100%;
+background:#000;
+padding:90px 8%;
+overflow:hidden;
+}
+
+
+/* CONTAINER */
+
+.insurers-performance-container{
+max-width:1450px;
+margin:auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:flex-start;
+}
+
+
+/* =========================
+LEFT
+========================= */
+
+.insurers-performance-left span{
+font-size:12px;
+letter-spacing:3px;
+text-transform:uppercase;
+color:#9d9d9d;
+display:block;
+margin-bottom:22px;
+}
+
+
+.insurers-performance-left h2{
+font-size:48px;
+line-height:1.15;
+font-weight:600;
+color:#fff;
+position:relative;
+padding-bottom:28px;
+margin-bottom:32px;
+}
+
+
+.insurers-performance-left h2::after{
+content:"";
+position:absolute;
+left:0;
+bottom:0;
+width:70px;
+height:3px;
+background:#fff;
+}
+
+
+.insurers-performance-left p{
+font-size:17px;
+line-height:1.9;
+color:#cfcfcf;
+max-width:620px;
+}
+
+
+/* =========================
+RIGHT
+========================= */
+
+.insurers-performance-right{
+display:grid;
+grid-template-columns:1fr;
+gap:22px;
+}
+
+
+/* CARD */
+
+.insurers-performance-card{
+background:#0f0f0f;
+border:1px solid rgba(255,255,255,.08);
+padding:35px 38px;
+transition:.5s ease;
+position:relative;
+overflow:hidden;
+}
+
+
+/* TOP LINE */
+
+.insurers-performance-card::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:0;
+height:2px;
+background:#fff;
+transition:.6s ease;
+}
+
+
+.insurers-performance-card:hover::before{
+width:100%;
+}
+
+
+.insurers-performance-card:hover{
+transform:translateY(-8px);
+border-color:rgba(255,255,255,.2);
+background:#151515;
+}
+
+
+/* NUMBER */
+
+.insurers-performance-card h3{
+font-size:46px;
+font-weight:600;
+color:#fff;
+margin-bottom:15px;
+line-height:1;
+}
+
+
+/* TEXT */
+
+.insurers-performance-card p{
+font-size:15px;
+line-height:1.8;
+color:#bdbdbd;
+max-width:420px;
+}
+
+
+/* =========================
+BOTTOM NOTE
+========================= */
+
+.insurers-performance-note{
+max-width:1450px;
+margin:40px auto 0;
+padding-top:25px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+
+.insurers-performance-note p{
+font-size:13px;
+line-height:1.8;
+color:#8e8e8e;
+max-width:900px;
+}
+
+
+/* =========================
+LAPTOP
+========================= */
+
+@media(max-width:1200px){
+
+.insurers-performance-left h2{
+font-size:40px;
+}
+
+.insurers-performance-card h3{
+font-size:40px;
+}
+
+}
+
+
+/* =========================
+TABLET
+========================= */
+
+@media(max-width:992px){
+
+.insurers-performance-container{
+grid-template-columns:1fr;
+gap:55px;
+}
+
+.insurers-performance-left h2{
+font-size:38px;
+}
+
+}
+
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.insurers-performance{
+padding:70px 6%;
+}
+
+.insurers-performance-left h2{
+font-size:32px;
+line-height:1.25;
+}
+
+.insurers-performance-left p{
+font-size:15px;
+line-height:1.8;
+}
+
+.insurers-performance-card{
+padding:28px 25px;
+}
+
+.insurers-performance-card h3{
+font-size:34px;
+}
+
+.insurers-performance-card p{
+font-size:14px;
+}
+
+.insurers-performance-note p{
+font-size:12px;
+}
+
+}
+
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.insurers-performance-left h2{
+font-size:28px;
+}
+
+.insurers-performance-card h3{
+font-size:30px;
+}
+
+}
+
+
+/*==================================
+CREDIT STRATEGIES
+==================================*/
+
+.qa-strategies{
+    background:#fff;
+    color:#000;
+    padding:120px 8%;
+}
+
+/* Header */
+
+.qa-strategies-header{
+    max-width:760px;
+    margin-bottom:60px;
+}
+
+.qa-strategies-header span{
+    display:block;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#7a7a7a;
+    margin-bottom:20px;
+}
+
+.qa-strategies-header h2{
+    font-size:54px;
+    font-weight:300;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#000;
+}
+
+.qa-strategies-header p{
+    font-size:18px;
+    color:#555;
+    line-height:1.9;
+}
+
+
+/*==================================
+ACCORDION
+==================================*/
+
+.qa-strategy{
+    border-top:1px solid #e5e5e5;
+    background:#fff !important;
+}
+
+.qa-strategy:last-child{
+    border-bottom:1px solid #e5e5e5;
+}
+
+/* REMOVE ALL HOVER EFFECTS */
+
+.qa-strategy:hover,
+.qa-strategy:focus,
+.qa-strategy:active{
+    background:#fff !important;
+    padding-left:0 !important;
+    color:#000 !important;
+    transform:none !important;
+}
+
+/* Remove pseudo elements if they exist */
+
+.qa-strategy::before,
+.qa-strategy::after,
+.qa-strategy:hover::before,
+.qa-strategy:hover::after{
+    display:none !important;
+    content:none !important;
+}
+
+/*==================================
+BUTTON
+==================================*/
+
+.qa-strategy-btn{
+    width:100%;
+    background:#fff !important;
+    border:none;
+    color:#000 !important;
+    padding:35px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    text-align:left;
+}
+
+.qa-strategy-btn:hover,
+.qa-strategy-btn:focus,
+.qa-strategy-btn:active{
+    background:#fff !important;
+    color:#000 !important;
+}
+
+.qa-strategy-btn span{
+    font-size:32px;
+    font-weight:300;
+    line-height:1.3;
+    color:#000 !important;
+}
+
+.qa-strategy-btn:hover span{
+    color:#000 !important;
+}
+
+/*==================================
+PLUS ICON
+==================================*/
+
+.qa-plus{
+    font-size:34px;
+    font-weight:300;
+    color:#000 !important;
+    flex-shrink:0;
+}
+
+.qa-strategy:hover .qa-plus{
+    color:#000 !important;
+}
+
+/*==================================
+CONTENT
+==================================*/
+
+.qa-strategy-content{
+    padding:0 0 40px;
+    background:#fff !important;
+}
+
+.qa-strategy-content p{
+    max-width:800px;
+    font-size:17px;
+    line-height:1.9;
+    color:#555 !important;
+    margin-bottom:30px;
+}
+
+/*==================================
+CONTENT
+==================================*/
+
+.qa-strategy-content{
+    padding:0 0 40px;
+}
+
+.qa-strategy-content p{
+    max-width:800px;
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:30px;
+}
+
+
+/*==================================
+SUB STRATEGIES
+==================================*/
+
+.qa-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.qa-tags span{
+    border:1px solid #dcdcdc;
+    padding:12px 18px;
+    border-radius:40px;
+    font-size:14px;
+    color:#444;
+    background:#fafafa;
+    transition:border-color .3s ease;
+}
+
+/* no color change */
+
+.qa-tags span:hover{
+    border-color:#999;
+}
+
+
+/*==================================
+TABLET
+==================================*/
+
+@media(max-width:992px){
+
+    .qa-strategies{
+        padding:90px 6%;
+    }
+
+    .qa-strategies-header h2{
+        font-size:42px;
+    }
+
+    .qa-strategies-header p{
+        font-size:17px;
+    }
+
+    .qa-strategy-btn span{
+        font-size:26px;
+    }
+
+    .qa-strategy-content p{
+        font-size:16px;
+    }
+
+}
+
+
+/*==================================
+MOBILE
+==================================*/
+
+@media(max-width:768px){
+
+    .qa-strategies{
+        padding:70px 6%;
+    }
+
+    .qa-strategies-header{
+        margin-bottom:50px;
+    }
+
+    .qa-strategies-header h2{
+        font-size:34px;
+    }
+
+    .qa-strategies-header p{
+        font-size:16px;
+        line-height:1.8;
+    }
+
+    .qa-strategy-btn{
+        padding:28px 0;
+        gap:20px;
+    }
+
+    .qa-strategy-btn span{
+        font-size:22px;
+        max-width:80%;
+    }
+
+    .qa-plus{
+        font-size:28px;
+    }
+
+    .qa-strategy-content{
+        padding-bottom:30px;
+    }
+
+    .qa-strategy-content p{
+        font-size:15px;
+        line-height:1.8;
+        margin-bottom:25px;
+    }
+
+    .qa-tags{
+        gap:12px;
+    }
+
+    .qa-tags span{
+        font-size:13px;
+        padding:10px 14px;
+    }
+
+    .qa-strategy:hover{
+        padding-left:0;
+    }
+
+}
+
+
+/*==================================
+SMALL MOBILE
+==================================*/
+
+@media(max-width:480px){
+
+    .qa-strategies{
+        padding:60px 5%;
+    }
+
+    .qa-strategies-header h2{
+        font-size:30px;
+    }
+
+    .qa-strategies-header p{
+        font-size:15px;
+    }
+
+    .qa-strategy-btn span{
+        font-size:20px;
+    }
+
+    .qa-plus{
+        font-size:24px;
+    }
+
+    .qa-tags span{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+
+/*=================================================
+VALUE ENHANCEMENT PROGRAM
+=================================================*/
+
+.qa-value-program{
+    padding:120px 8%;
+    background:#fff;
+}
+
+.qa-value-grid{
+    display:grid;
+    grid-template-columns:1fr 1.3fr;
+    gap:70px;
+    align-items:center;
+}
+
+.qa-value-content span{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#777;
+    display:block;
+    margin-bottom:22px;
+}
+
+.qa-value-content h2{
+    font-size:48px;
+    font-weight:400;
+    line-height:1.15;
+    margin-bottom:28px;
+    color:#000;
+}
+
+.qa-value-content p{
+    font-size:17px;
+    line-height:1.9;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.qa-value-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:14px;
+    color:#000;
+    text-decoration:none;
+    font-size:15px;
+    margin-top:15px;
+    font-weight:500;
+}
+
+.qa-value-btn span{
+    width:40px;
+    height:40px;
+    border:1px solid #000;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    letter-spacing:0;
+    margin:0;
+}
+
+.qa-value-media{
+    position:relative;
+    overflow:hidden;
+}
+
+.qa-value-media img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+.qa-value-note{
+    margin-top:45px;
+    padding-top:30px;
+    border-top:1px solid #e5e5e5;
+    color:#666;
+    line-height:1.9;
+    font-size:14px;
+}
+
+
+/*=================================================
+INSURANCE SECTION
+=================================================*/
+
+.qa-insurance{
+    padding:120px 8%;
+    background:#fafafa;
+}
+
+.qa-insurance-top{
+    max-width:950px;
+    margin-bottom:80px;
+}
+
+.qa-insurance-top span{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#777;
+    display:block;
+    margin-bottom:25px;
+}
+
+.qa-insurance-top h2{
+    font-size:52px;
+    font-weight:400;
+    line-height:1.25;
+    color:#000;
+}
+
+.qa-insurance-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.qa-insurance-card{
+    padding-top:30px;
+    border-top:2px solid #000;
+}
+
+.qa-insurance-card h3{
+    font-size:28px;
+    font-weight:400;
+    margin-bottom:25px;
+    color:#000;
+}
+
+.qa-insurance-card p{
+    font-size:16px;
+    line-height:1.9;
+    color:#555;
+}
+
+
+/*=================================================
+TABLET
+=================================================*/
+
+@media(max-width:992px){
+
+    .qa-value-grid{
+        grid-template-columns:1fr;
+    }
+
+    .qa-value-content h2{
+        font-size:40px;
+    }
+
+    .qa-value-media img{
+        height:450px;
+    }
+
+    .qa-insurance-grid{
+        grid-template-columns:1fr;
+    }
+
+    .qa-insurance-top h2{
+        font-size:42px;
+    }
+}
+
+
+/*=================================================
+MOBILE
+=================================================*/
+
+@media(max-width:768px){
+
+    .qa-value-program,
+    .qa-insurance{
+        padding:70px 6%;
+    }
+
+    .qa-value-content h2{
+        font-size:34px;
+    }
+
+    .qa-value-content p{
+        font-size:16px;
+    }
+
+    .qa-value-media img{
+        height:280px;
+    }
+
+    .qa-play-btn{
+        width:60px;
+        height:60px;
+        right:20px;
+        bottom:20px;
+        font-size:20px;
+    }
+
+    .qa-insurance-top{
+        margin-bottom:50px;
+    }
+
+    .qa-insurance-top h2{
+        font-size:32px;
+    }
+
+    .qa-insurance-card h3{
+        font-size:24px;
+    }
+
+    .qa-insurance-card p{
+        font-size:15px;
+    }
+}
+
+
+/*=================================================
+SMALL MOBILE
+=================================================*/
+
+@media(max-width:480px){
+
+    .qa-value-content h2,
+    .qa-insurance-top h2{
+        font-size:28px;
+    }
+
+    .qa-value-btn{
+        flex-wrap:wrap;
+    }
+
+    .qa-insurance-card h3{
+        font-size:22px;
+    }
+}
+
+/* ===============================
+   TEAM NOTE
+=================================*/
+
+.team-note {
+  background: #000;
+  color: #fff;
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.team-note h2 {
+  font-size: 28px;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+
+@media (max-width: 992px) {
+
+  .directors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .members-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .team-hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+  }
+}

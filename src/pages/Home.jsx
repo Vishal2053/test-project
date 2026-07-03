@@ -232,13 +232,13 @@ function Home() {
 
         <div className="wealth-right">
   <div className="wealth-card-item">
-    <span>Quintessence Atelier Real Estate Income Trust (BREIT)</span>
+    <span>Quintessence Atelier Real Estate Income Trust</span>
     <Link to="/real-estate-income-trust" className="arrow"> → </Link>
   </div>
 
   <div className="divider"></div>
   <div className="wealth-card-item">
-    <span>Quintessence Atelier Private Credit Fund (BCRED)</span>
+    <span>Quintessence Atelier Private Credit Fund</span>
 
     <Link to="/private-credit-fund" className="arrow">
       →
@@ -247,7 +247,7 @@ function Home() {
 
   <div className="divider"></div>
   <div className="wealth-card-item">
-    <span>Quintessence Atelier Private Multi-Asset Credit and Income Fund (BMACX)</span>
+    <span>Quintessence Atelier Private Multi-Asset Credit and Income Fund</span>
 
     <Link
       to="/multi-asset-credit-fund"

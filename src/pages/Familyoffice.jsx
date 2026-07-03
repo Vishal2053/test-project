@@ -1,4 +1,4 @@
-import "../styles/FamilyOffice.css";
+import "../styles/Familyoffice.css";
 import React, { useEffect, useState } from "react";
 
 

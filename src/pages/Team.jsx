@@ -78,38 +78,31 @@ growth and long-term value creation.
 
 <div className="executive-card">
 <div className="card-number">01</div>
-<h3>John Anderson</h3>
-<p>Chief Executive Officer</p>
+
 </div>
 
 <div className="executive-card">
 <div className="card-number">02</div>
-<h3>Michael Thompson</h3>
-<p>Managing Director</p>
+
 </div>
 
 <div className="executive-card">
 <div className="card-number">03</div>
-<h3>David Carter</h3>
-<p>Chief Operating Officer</p>
+
 </div>
 
 <div className="executive-card">
 <div className="card-number">04</div>
-<h3>Robert Williams</h3>
-<p>Chief Financial Officer</p>
+
 </div>
 
 <div className="executive-card">
 <div className="card-number">05</div>
-<h3>Daniel Wilson</h3>
-<p>Head of Strategy</p>
+
 </div>
 
 <div className="executive-card">
 <div className="card-number">06</div>
-<h3>James Miller</h3>
-<p>Executive Director</p>
 </div>
 
 </div>
@@ -143,74 +136,50 @@ leadership, expertise and long-term strategic vision.
 
 <div className="people-card">
 <div className="card-number">01</div>
-<h3>John Anderson</h3>
-<p>Managing Director</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">02</div>
-<h3>Michael Thompson</h3>
-<p>Executive Director</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">03</div>
-<h3>David Carter</h3>
-<p>Chief Financial Officer</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">04</div>
-<h3>Robert Williams</h3>
-<p>Head of Operations</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">05</div>
-<h3>Daniel Wilson</h3>
-<p>Investment Strategist</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">06</div>
-<h3>James Miller</h3>
-<p>Executive Officer</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">07</div>
-<h3>Christopher Hall</h3>
-<p>Senior Partner</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">08</div>
-<h3>William Brown</h3>
-<p>Research Head</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">09</div>
-<h3>Richard Smith</h3>
-<p>Portfolio Director</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">10</div>
-<h3>Andrew Taylor</h3>
-<p>Strategic Advisor</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">11</div>
-<h3>Thomas Wilson</h3>
-<p>Managing Partner</p>
 </div>
 
 <div className="people-card">
 <div className="card-number">12</div>
-<h3>Kevin Martin</h3>
-<p>Investment Executive</p>
 </div>
 
 </div>

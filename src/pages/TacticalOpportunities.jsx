@@ -53,7 +53,7 @@ We deploy capital strategically, act with speed and precision, and provide disti
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\tactical.png"
+            src="/assets/images/tactical.png"
             alt="Tactical opporoootunities"
         />
     </div>
@@ -196,7 +196,7 @@ market capabilities and diversified opportunity engagements.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\tactical1.png"
+            src="/assets/images/tactical1.png"
             alt="Corporate Building"
         />
     </div>

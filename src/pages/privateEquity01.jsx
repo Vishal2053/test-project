@@ -94,7 +94,7 @@ return(
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src/assets/images/private equity news 1.jpg"
+            src="/assets/images/private equity news 1.jpg"
             alt="Private equity 01"
         />
     </div>

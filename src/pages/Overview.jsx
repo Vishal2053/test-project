@@ -127,7 +127,7 @@ const clientItems = [
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src/assets/images/outcomes01.png"
+            src="/assets/images/outcomes01.png"
             alt="Corporate Building"
         />
     </div>

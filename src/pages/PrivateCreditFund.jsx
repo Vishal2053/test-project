@@ -32,7 +32,7 @@ across evolving real estate markets.
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\private credit fund.jpg"
+            src="/assets/images/private credit fund.jpg"
             alt="Private Credit fund"
         />
     </div>

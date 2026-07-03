@@ -75,7 +75,7 @@ Explore Opportunities
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\career011.png"
+            src="/assets/images/career011.png"
             alt="Career"
         />
     </div>
@@ -89,7 +89,7 @@ Explore Opportunities
 <section className="career-banner-image">
 
 <img
-src="src\assets\images\careeer.png"
+src="/assets/images/careeer.png"
 alt="Team Collaboration"
 />
 

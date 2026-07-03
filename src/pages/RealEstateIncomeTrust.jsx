@@ -113,7 +113,7 @@ across evolving real estate markets.
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\reit.png"
+            src="/assets/images/reit.png"
             alt="real esate"
         />
     </div>
@@ -197,7 +197,7 @@ strong potential for sustainable growth and value creation.</h2>
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\financilaa.png"
+            src="/assets/images/financilaa.png"
             alt="real esate income trust"
         />
     </div>

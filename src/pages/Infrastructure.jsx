@@ -47,7 +47,7 @@ return(
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\infrasturture01.png"
+            src="/assets/images/infrasturture01.png"
             alt="infrasturture"
         />
     </div>
@@ -192,7 +192,7 @@ investment capabilities and real estate development operations.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\infrasturture.png"
+            src="/assets/images/infrasturture.png"
             alt="Corporate Building"
         />
     </div>

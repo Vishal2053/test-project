@@ -55,7 +55,7 @@ across evolving real estate markets.
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src/assets/images/real estate.jpg"
+            src="/assets/images/real estate.jpg"
             alt="real esate"
         />
     </div>
@@ -199,7 +199,7 @@ investment capabilities and real estate development operations.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\realewhat we do.png"
+            src="/assets/images/realewhat we do.png"
             alt="Corporate Building"
         />
     </div>
@@ -354,7 +354,7 @@ PRIVATE REAL ESTATE CTA
             <div className="pre-image">
 
                 <img
-                    src="src\assets\images\essentials.png"
+                    src="/assets/images/essentials.png"
                     alt="Private Real Estate"
                 />
 

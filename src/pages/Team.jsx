@@ -31,7 +31,7 @@ function Team() {
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src/assets/images/team.png"
+            src="/assets/images/team.png"
             alt="Tactical opporoootunities"
         />
     </div>

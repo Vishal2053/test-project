@@ -88,7 +88,7 @@ Technology Innovation
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\technology01.png"
+            src="/assets/images/technology01.png"
             alt="Tactical opporoootunities"
         />
     </div>
@@ -119,7 +119,7 @@ Technology Innovation
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\technology.png"
+            src="/assets/images/technology.png"
             alt="Corporate Building"
         />
     </div>

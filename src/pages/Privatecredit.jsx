@@ -177,7 +177,7 @@ return(
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\credit news.jpg"
+            src="/assets/images/credit news.jpg"
             alt="Private Credit"
         />
     </div>
@@ -423,7 +423,7 @@ return(
                 <div className="qa-node qa-brand">
 
     <img
-        src="src/assets/images/Quintessence atelier.jpg"
+        src="/assets/images/Quintessence atelier.jpg"
         alt="Quintessence Atelier"
         className="qa-brand-logo"
     />

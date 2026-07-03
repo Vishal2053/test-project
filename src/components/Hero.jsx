@@ -4,22 +4,22 @@ import { Link } from "react-router-dom";
 
 const slides = [
 {
-image:"src/assets/images/hero03.png",
+image:"/assets/images/hero03.png",
 title:"Investing for Tomorrow",
 text:"Positioning capital for long-term growth."
 },
 {
-image:"src/assets/images/hero02.png",
+image:"/assets/images/hero02.png",
 title:"Disciplined Execution",
 text:"Transforming opportunities into lasting value."
 },
 {
-image:"src/assets/images/hero01.png",
+image:"/assets/images/hero01.png",
 title:"Market Leadership",
 text:"Leveraging experience across private markets."
 },
 {
-image:"src/assets/images/hero04.png",
+image:"/assets/images/hero04.png",
 title:"Enduring Partnerships",
 text:"Building relationships that create sustainable success."
 },

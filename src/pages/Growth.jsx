@@ -50,7 +50,7 @@ Growth
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\growth.png"
+            src="/assets/images/growth.png"
             alt="Growth"
         />
     </div>
@@ -146,7 +146,7 @@ Growth
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\growth1.png"
+            src="/assets/images/growth1.png"
             alt="Corporate Building"
         />
     </div>

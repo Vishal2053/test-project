@@ -40,7 +40,7 @@ strengthen businesses, communities, and future generations.
 <div className="outcomes-image">
 
 <img
-src="src\assets\images\pw1.png"
+src="/assets/images/pw1.png"
 alt="private Wealth"
 />
 

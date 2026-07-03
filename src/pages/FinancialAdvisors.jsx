@@ -72,7 +72,7 @@ Connect With Us
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\Family Offices.jpg"
+            src="/assets/images/Family Offices.jpg"
             alt="Financial Advisors"
         />
     </div>
@@ -180,7 +180,7 @@ and long-term private investment capabilities across select engagements.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\financilaa.png"
+            src="/assets/images/financilaa.png"
             alt="Corporate Building"
         />
     </div>

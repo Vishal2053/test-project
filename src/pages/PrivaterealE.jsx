@@ -100,7 +100,7 @@ return(
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\real estate news.png"
+            src="/assets/images/real estate news.png"
             alt="Private real estate"
         />
     </div>

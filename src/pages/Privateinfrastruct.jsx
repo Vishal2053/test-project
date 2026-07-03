@@ -103,7 +103,7 @@ return(
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\infrastructure news.jpg"
+            src="/assets/images/infrastructure news.jpg"
             alt="Infrasturture"
         />
     </div>

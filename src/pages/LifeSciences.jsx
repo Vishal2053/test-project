@@ -33,7 +33,7 @@ function MultiAsset() {
       description:
         "Our team supported business growth initiatives by identifying opportunities, strengthening operations, and driving long-term value creation across sectors.",
       image:
-        "src/assets/images/expansion.png",
+        "/assets/images/expansion.png",
     },
 
     transformation: {
@@ -106,7 +106,7 @@ Explore Strategies
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\lifescienceshero.png"
+            src="/assets/images/lifescienceshero.png"
             alt="Life Sciences"
         />
     </div>
@@ -251,7 +251,7 @@ capabilities, strategic allocations, and market-focused engagements.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\lifesciences.png"
+            src="/assets/images/lifesciences.png"
             alt="Corporate Building"
         />
     </div>

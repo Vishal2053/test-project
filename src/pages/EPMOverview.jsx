@@ -129,7 +129,7 @@ Essentials of Private Markets
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\epmoverview.png"
+            src="/assets/images/epmoverview.png"
             alt="overview"
         />
     </div>

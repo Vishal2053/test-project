@@ -77,7 +77,7 @@ Connect With Us
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\institutional.jpg"
+            src="/assets/images/institutional.jpg"
             alt="Investors"
         />
     </div>
@@ -210,7 +210,7 @@ market activity and long-term financial partnerships.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\financila investors.png"
+            src="/assets/images/financila investors.png"
             alt="Corporate Building"
         />
     </div>

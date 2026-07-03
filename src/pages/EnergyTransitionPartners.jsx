@@ -126,7 +126,7 @@ EnergyTransitionPartners
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\energytrasmission.png"
+            src="/assets/images/energytrasmission.png"
             alt="Energy Transmission"
         />
     </div>
@@ -272,7 +272,7 @@ investment capabilities and real estate development operations.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\energytrasmission1.png"
+            src="/assets/images/energytrasmission1.png"
             alt="Corporate Building"
         />
     </div>

@@ -98,7 +98,7 @@ Explore Strategies
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\multiasset.png"
+            src="/assets/images/multiasset.png"
             alt="Multi Asset Investing"
         />
     </div>
@@ -243,7 +243,7 @@ capabilities, strategic allocations, and market-focused engagements.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\Multiassetinvestwwd.png"
+            src="/assets/images/Multiassetinvestwwd.png"
             alt="Corporate Building"
         />
     </div>

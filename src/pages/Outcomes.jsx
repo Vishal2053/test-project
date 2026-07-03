@@ -182,7 +182,7 @@ organizations reach their potential.
     <div className="impact-image-overlay"></div>
 
     <img
-      src="src/assets/images/impact.jpg"
+      src="/assets/images/impact.jpg"
       alt="Impact"
     />
 

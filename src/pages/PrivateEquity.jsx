@@ -54,7 +54,7 @@ disciplined investments and sustainable growth initiatives.
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\privateequityhero.png"
+            src="/assets/images/privateequityhero.png"
             alt="Private equity"
         />
     </div>
@@ -202,7 +202,7 @@ private market capabilities, and active growth partnerships.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\privateequity.png"
+            src="/assets/images/privateequity.png"
             alt="Corporate Building"
         />
     </div>

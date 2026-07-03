@@ -81,7 +81,7 @@ We are a global leader in the alternative asset secondary market, with deep expe
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\partners.png"
+            src="/assets/images/partners.png"
             alt="Partners"
         />
     </div>
@@ -224,7 +224,7 @@ strategic engagements and long-term investment activity.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\spartnerswwd.png"
+            src="/assets/images/spartnerswwd.png"
             alt="Corporate Building"
         />
     </div>

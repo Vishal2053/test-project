@@ -89,7 +89,7 @@ and long-term financial growth opportunities.
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\credit01.png"
+            src="/assets/images/credit01.png"
             alt="Credit"
         />
     </div>
@@ -224,7 +224,7 @@ broader strategic vision and platform capabilities.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\credit.png"
+            src="/assets/images/credit.png"
             alt="Corporate Building"
         />
     </div>

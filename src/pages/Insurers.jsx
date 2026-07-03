@@ -126,7 +126,7 @@ Connect With Us
     <div className="hero-image-wrap">
         <div className="hero-image-overlay"></div>
         <img
-            src="src\assets\images\insurers.png"
+            src="/assets/images/insurers.png"
             alt="insurers"
         />
     </div>
@@ -257,7 +257,7 @@ credit engagements and long-term capital relationships.
            <div className="blackstone-reveal">
     <div className="blackstone-image">
         <img
-            src="src\assets\images\insurers2.png"
+            src="/assets/images/insurers2.png"
             alt="Corporate Building"
         />
     </div>
@@ -410,7 +410,7 @@ credit engagements and long-term capital relationships.
         <div className="qa-value-media">
 
             <img
-                src="src\assets\images\values.png"
+                src="/assets/images/values.png"
                 alt="Operational Excellence"
             />
 
